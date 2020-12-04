@@ -52,7 +52,7 @@ app.post('/comprar', (req, res) => {
             failure: url+'failure'
         },
 
-        notification_url: host+'notifications',
+        notification_url: host+'webhook',
 
         auto_return: 'approved',
 
