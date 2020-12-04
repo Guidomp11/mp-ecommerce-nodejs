@@ -30,7 +30,7 @@ mercadopago.configure({
 });
 
 app.post('/comprar', (req, res) => {
-    const host = 'http://localhost:3000/';
+    const host = 'https://certif-mercado-pago.herokuapp.com/';
     const url = host+'callback?status=';
     
     let imageDirectory = req.body.productImage.split('/');
@@ -38,7 +38,7 @@ app.post('/comprar', (req, res) => {
 
     let item = {
         id: 1234,
-        picture_url: 'http://localhost:3000/assets/'+imageDirectory,
+        picture_url: host+imageDirectory,
         title: req.body.productTitle,
         description: 'Dispositivo móvil de Tienda e-commerce',
         unit_price: Number(req.body.productPrice),
