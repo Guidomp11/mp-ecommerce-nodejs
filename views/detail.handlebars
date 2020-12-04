@@ -84,7 +84,15 @@
                                     {{ unit }}
                                 </h3>
                             </div>
-                            <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                            <form action="/comprar" method="POST">
+
+                                <input type="text" name="productTitle" value={{ title }} hidden>
+                                <input type="text" name="productImage" value={{ img }} hidden>
+                                <input type="text" name="productPrice" value={{ price }} hidden>
+                                
+                                <button type="submit" class="mercadopago-button">Pagar</button>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -92,4 +100,5 @@
         </div>
     </div>
 </div>
+<script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
    
