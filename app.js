@@ -117,7 +117,7 @@ app.get('/callback', (req, res) => {
     }
 });
 
-app.get('/webhook', (req, res) => {
+app.post('/webhook', (req, res) => {
     console.log('webhook', req.body);
     res.status(200).send(req.body);
 });
