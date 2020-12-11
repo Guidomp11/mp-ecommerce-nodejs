@@ -35,7 +35,7 @@ app.post('/comprar', (req, res) => {
     
     let imageDirectory = req.body.productImage.split('/');
     imageDirectory = imageDirectory[imageDirectory.length-1];
-
+    console.log(host+imageDirectory);
     let item = {
         id: 1234,
         picture_url: host+imageDirectory,
