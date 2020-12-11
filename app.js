@@ -45,8 +45,6 @@ app.post('/comprar', (req, res) => {
         quantity: 1
     }
 
-    console.log(item);
-
     let preference = {
         back_urls:{
             success: url+'success',

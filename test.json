@@ -1,0 +1,23 @@
+{
+    "status": [ "success", "approved" ],
+    
+    "collection_id": "12602953858",
+    
+    "collection_status": "approved",
+    
+    "payment_id": "12602953858",
+    
+    "external_reference": "ponce.guido@gmail.com",
+    
+    "payment_type": "credit_card",
+    
+    "merchant_order_id": "2085038677",
+    
+    "preference_id": "469485398-18775d18-f460-4a36-9937-af8e55ee2335",
+    
+    "site_id": "MLA",
+    
+    "processing_mode": "aggregator",
+    
+    "merchant_account_id": "null"       
+}
